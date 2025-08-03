@@ -1,4 +1,4 @@
-const socket = io(); // Replace with your backend URL if deployed
+const socket = io("https://war-game-choice-based.onrender.com"); // Replace with your backend URL if deployed
 let currentMap = null;
 let isMyTurn = false;
 
