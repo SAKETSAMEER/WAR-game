@@ -3,8 +3,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const app = express();
 // Add these two lines
-const path = require('path');
-app.use(express.static(path.join(__dirname, 'public')));
+
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
